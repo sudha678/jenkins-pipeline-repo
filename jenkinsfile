@@ -4,22 +4,22 @@ pipeline {
     stages {
         stage('compile') {
             steps {
-                echo 'compiling.. This is the compile phase'
+                echo 'compiling.. This is the compile phase webhook'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing.. This is the testing phase'
+                echo 'Testing.. This is the testing phase webhook'
             }
         }
         stage('package') {
             steps {
-                echo 'creating package....  This is the package phase'
+                echo 'creating package....  This is the package phase webhook'
             }
         }
 	stage('Deploy') {
 		steps {
-			echo ' deploying package deployement phase....'
+			echo ' deploying package deployement phase webhook....'
 		}
 	}
     }
